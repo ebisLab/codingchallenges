@@ -13,3 +13,24 @@ Different terms for inputs
 RULE 4
 -------
 Drop non dominant terms
+
+
+Good code should be:
+Readable
+Speed - Time complexity -efficient
+Memory - Space complexity -efficient'  -stack overflow
+
+*there's usually trade off between time and memory.
+less time? more memory
+less memory, more time
+
+
+** What causes space complexity?
+variables
+data structures
+function calls
+allocations
+
+
+
+***space complexity ****
