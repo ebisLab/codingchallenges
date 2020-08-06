@@ -1,0 +1,15 @@
+RULE 1
+-------
+Alaways assume worst case
+
+RULE 2
+-------
+Drop the constants
+
+RULE 3
+-------
+Different terms for inputs
+
+RULE 4
+-------
+Drop non dominant terms
