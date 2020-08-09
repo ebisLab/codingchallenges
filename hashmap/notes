@@ -1,0 +1,6 @@
+mantains insertion order
+you can save data type as key
+
+
+Map() - mantains the insertion order
+Set() - it only stores the key 
