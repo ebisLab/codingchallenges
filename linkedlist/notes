@@ -10,3 +10,27 @@ apples
 
 
 linked list are better than hashmap when it comes to inserting
+*start at head, and traverse (iterate) and keep going until you hit null. ==> while loop (we dont know how long the list is going to be)
+*LL and nodes are scattered (slower) as opposed to arrays arranged adjacent
+*hashtable- inserting, scatter it all over the memory , no shifting needed. 
+
+PROS:
+*delete nodes easily
+*you can have sorted data as opposed to hashmap
+
+
+CONS: 
+
+
+for Arrays, when inserting you have to shift the following indexes to the next ajacent indeces
+
+prpepend O(1)
+append o(1) //at the end of the list
+lookup o(n) //traversal from head all the way until we find what we're looking for
+insert o(n) //
+delete o(n) // we have to find the item
+
+
+POINTER its a reference to another memory or node 
+obj1 = {a: "wassup"}
+obj2=obj1   <--reference
