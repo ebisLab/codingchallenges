@@ -1,3 +1,8 @@
+arr = [1, 10, 18, 16, 88]
+
+
+# create new method that will say reverse
+
 """ll are a list which are linked
 starts at head and ends at tail
 
@@ -159,37 +164,55 @@ class LinkedList():
             self.tail = current_node
         return
 
+    def reversing(self):
+        if not self.head.next:
+            return self.head
+
+        first = self.head
+        print("first", first, "self.head", self.head)
+        self.tail = self.head
+        second = first.next
+
+        while second:  # as long as second is not null
+            temp = second.next
+            second.next = first
+            first = second
+            second = temp
+        self.head.next = None
+        self.head = first
+
 
 if __name__ == '__main__':
     ll = LinkedList()
     ll.print_list()
 
     # empty
-    ll.append(5)
-    ll.append(2)
-    ll.append(9)
+    ll.append(1)
+    ll.append(10)
+    ll.append(18)
+    ll.append(16)
+    ll.append(88)
     ll.print_list()
 
     print("length of the list: ", ll.length)
-
-    ll.prepend(4)
+    ll.reversing()
     ll.print_list()
 
-    ll.insert(2, 7)
-    ll.print_list()
+    # ll.prepend(4)
+    # ll.print_list()
 
-    ll.delete_by_value(7)
-    print("by val")
-    ll.print_list()
+    # ll.insert(2, 7)
+    # ll.print_list()
 
-    ll.delete_by_position(8)
-    print("by pos")
-    ll.print_list()
+    # ll.delete_by_value(7)
+    # print("by val")
+    # ll.print_list()
 
-    print("print this")
+    # ll.delete_by_position(8)
+    # print("by pos")
+    # ll.print_list()
 
-    print(ll.head.data)
-    print(ll.tail.data)
-    # ll.printThis()
+    # print("print this")
 
-    # print(LinkedList())
+    # print(ll.head.data)
+    # print(ll.tail.data)

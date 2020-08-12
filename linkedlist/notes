@@ -34,3 +34,25 @@ delete o(n) // we have to find the item
 POINTER its a reference to another memory or node 
 obj1 = {a: "wassup"}
 obj2=obj1   <--reference
+
+
+
+Double linked list
+allows me to traverse backwards
+
+downside-  hold a little bit more memory
+pros - faster
+
+            pros                  cons
+Single      faster memory         cannot be iterated in reverse
+            fast insertion
+            fast deletion
+
+doubly      iterated from front 
+            or backwards
+            you dont have to 
+            traverse from front 
+            if you delete
+                                   complex and requires more memory
+                                   extra operations
+
