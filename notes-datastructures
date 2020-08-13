@@ -37,3 +37,9 @@ object
 set 
 
 
+memory leaks -> unused variables
+call stack -> 
+
+js is a single threaded language that can be non blocking= one call stack = can do one thing at a time, first in  last out
+
+aynchronous- is like texting an instructor and waiting until you get a call back (callback) , a text back
