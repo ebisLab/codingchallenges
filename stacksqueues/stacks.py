@@ -45,7 +45,18 @@ class StackLL():
             return
 
     def pop(self):
-        pass
+        if self.top is None:
+            print("Stack is empty")
+            return
+        else:
+            self.top = self.top.next
+            # print(self.length)
+            self.length -= 1
+            print(self.length)
+            # we need to make the bottom pointer nONE if there's only 1 element
+            if self.length == 0:
+                self.bottom = None
+            return
 
     def isEmpty(self):
         pass
@@ -55,12 +66,13 @@ if __name__ == '__main__':
     s = StackLL()
 
     s.print_list()
-    # ll.print_list()
 
     s.push("Discord")
     s.push("Udemy")
-    # s.push("google")
-    # s.pop()
+    s.push("google")
+    print(s.peek())
+    s.print_list()
+    s.pop()
     s.print_list()
     # x = s.peek()
     # print(x)
