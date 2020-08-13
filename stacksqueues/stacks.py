@@ -62,6 +62,32 @@ class StackLL():
         pass
 
 
+class StackArr():
+    def __init__(self):
+        self.array = []
+
+    def peek(self):  # we need to access the last of the array (top)
+        return self.array[len(self.array)-1]
+
+        # print("self.arra", self.array[len(self.array)-1])
+
+    def push(self, data):
+        print("data", data)
+        self.array.append(data)
+        print(self.array)
+        return
+
+    def print_list2(self):
+        print("--print list--")
+        # print the last element of the list first
+        # o(n)
+        # print("self.array")
+        # print(self.array)
+        for i in range(len(self.array)):
+            print(self.array[i])
+        return
+
+
 if __name__ == '__main__':
     s = StackLL()
 
@@ -74,5 +100,18 @@ if __name__ == '__main__':
     s.print_list()
     s.pop()
     s.print_list()
+
+    arr = StackArr()
+    # arr.peek()
+    print("print list")
+    arr.print_list2()
+    arr.push("Discord2")
+    arr.push("Udemy2")
+    print("printing from all", arr.array)
+    print("peeking", arr.peek())
+    # arr.peek()
+    print(arr.__dict__)
+    arr.print_list2()
+
     # x = s.peek()
     # print(x)
