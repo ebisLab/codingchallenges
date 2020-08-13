@@ -87,6 +87,14 @@ class StackArr():
             print(self.array[i])
         return
 
+    def pop(self):
+        if len(self.array) is not 0:
+            self.array.pop()
+            return
+        else:
+            print("Stack Empty")
+            return
+
 
 if __name__ == '__main__':
     s = StackLL()
@@ -111,6 +119,10 @@ if __name__ == '__main__':
     print("peeking", arr.peek())
     # arr.peek()
     print(arr.__dict__)
+    arr.print_list2()
+
+    arr.push("Slack")
+    arr.pop()
     arr.print_list2()
 
     # x = s.peek()
