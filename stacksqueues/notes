@@ -1,0 +1,27 @@
+stacks and queues they are linear
+
+stacks and queus are used for push pop, beginning, ending elements
+
+
+plates
+ -- --
+|    |
+|    |
+______   LIFO = Last in Firts out
+
+
+
+
+
+queues --- line to the roller coaster - first in first out
+enqueue -add queue - push
+dequeue- pop
+
+Stacks
+we can use Arrays AND LinkedList.. depends on priority
+LinkedList = Have take up more memory because of the pointers we're trying to hold on
+            Pros: Dynamic space
+
+Queue 
+Idally you want to build it with LL ->
+Array -- if we delete an index, we have to shift everyhing over to the previous index o(n)
