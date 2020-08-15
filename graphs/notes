@@ -1,0 +1,21 @@
+determining shortest path
+linked lists are a type of trees.
+
+trees are a type of graphs
+
+characteristics
+
+directed - can only go on 1 directed - twitter
+undirected - can go on multipley ways - highway , facebook
+        they describe traffic flow
+
+unweighted
+weighted 
+        -google map - cyclic
+
+cyclic - one node to another to anohter and go back to the starting point
+acyclic - you can't go back to the starting point
+
+Algorithm Associated
+--------------------
+BFS  DFS Searching

@@ -42,3 +42,10 @@ we need to figure out where to insert/deelete the item, and we'll have to shift 
 Trie - auto complete, auto suggestions
     benefits- speed and space
     O(len of the word)
+
+
+Algorithm Associated
+---------------------
+BFS DFS (Searching)
+Recursions
+Sorting
