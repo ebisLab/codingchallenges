@@ -1,0 +1,40 @@
+They have a hireraricheral 
+They have 0 or more child nodes
+
+LINKED LIST are a type of trees, but with just one child each level
+
+full tree - no gaps in the tree
+all the leaf nodes are full, no node with 1 child. no children or 2 children
+
+perfect binary tree - efficient - all nodes have 2 children.
+full binary tree - nodes have either 2 children or no children
+
+RULE 2:
+#nodes on the bottom level is equal to the sum of nodes above it + 1
+half of our nodes are at the bottom level. 
+
+O(log N) ->  kind of like searching through a phone book. (DIvide and conquer)
+ Its really fast
+
+Level 0: 1 root node  -   2^0 = 1
+Level 1: 2 ^ 1 = 2
+Level 2: 2^2=4
+Level 3: 2^3=8
+
+#of nodes in a tree = 2^h-1 (h=height)
+                    log of nodes = height <-steps
+                    log 100 = 2   (10^2=100)
+
+
+
+Binary Search Trees - Great for comparing. Preserves relationships
+
+Rule1:
+All child nodes to the right of the root node must be greater than the left children
+A node can only have 2 children at most
+
+Disadvantage: No o(1) operations - we usually have to do a traversal 
+Advantage: searching and lookup. 
+Insert - o(log N)
+delete - o log N ---
+we need to figure out where to insert/deelete the item, and we'll have to shift some nodes around. 

@@ -3,6 +3,9 @@ class Node():
         self.data = data  # data passed is stored in self.data
         self.next = None  # pointer, always points to null or None
 
+    def __str__(self):
+        return 'something'
+
 
 class StackLL():
     def __init__(self):

@@ -2,6 +2,8 @@ stacks and queues they are linear
 
 stacks and queus are used for push pop, beginning, ending elements
 
+Great for fast operations, fast peek, ordered
+nOT IDEAL FOR LOOKUP
 
 plates
  -- --
