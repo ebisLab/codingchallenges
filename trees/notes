@@ -38,3 +38,7 @@ Advantage: searching and lookup.
 Insert - o(log N)
 delete - o log N ---
 we need to figure out where to insert/deelete the item, and we'll have to shift some nodes around. 
+
+Trie - auto complete, auto suggestions
+    benefits- speed and space
+    O(len of the word)

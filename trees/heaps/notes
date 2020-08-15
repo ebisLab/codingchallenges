@@ -1,0 +1,14 @@
+memory heap is not heap data structure
+
+binary heap - there's no concept of unbalanced binary.
+left to right insertion
+they preserve order of insertion
+they are not ordered. 
+
+lookup(o(n))  -- slow
+insert(o(logN))
+delete(o(logN))
+
+useful for priority queue
+
+priority queue- each element has a priority. elements with higher priority are served before elements with lower priority
