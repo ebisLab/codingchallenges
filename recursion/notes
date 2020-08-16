@@ -1,0 +1,12 @@
+function that calls itself
+How it helps solve problems:
+helps with tasks that have repeated sub tasks
+
+Found in Serching ans sorting:
+Traversing a tree
+
+stack overflow
+
+there's usually a base case
+
+pops functions off the stack 
