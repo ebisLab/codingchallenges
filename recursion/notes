@@ -10,3 +10,27 @@ stack overflow
 there's usually a base case
 
 pops functions off the stack 
+
+
+DRY
+Readability
+
+Drawback
+Large stack
+recursive- adds extra piece of memory
+            -Tail call optimization - Allows recursions to be called without increasing the call stack
+
+
+When to use it
+--------------
+Tree data structure when doing traversal
+when you don't know how many times you loop. 
+*Everytime you are using a tree or converting something into a tree.
+    *A problem can be didivided into a number of subproblems that are smaller instances of the same problem
+    *Each instances of the subproblems is identical in nature
+    *The solution of each subproblem can be combined to solve the problem at hand. 
+
+    Divide and conquer -> split it in the middle  . or go to that section it may contain and start solving. 
+
+They can make task
+

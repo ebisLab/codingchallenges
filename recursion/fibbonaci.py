@@ -1,4 +1,4 @@
-def fibbonacciIt(n):
+def fibbonacciIterative(n):
     answer1 = 0
     answer2 = 1
     if n == 0:
@@ -20,5 +20,12 @@ def fibonnaciRecursive(n):
     return fibonnaciRecursive(n-1)+fibonnaciRecursive(n-2)
 
 
+def fibonnaciRecursive2(n):
+    if n < 2:
+        return n
+    return fibonnaciRecursive2(n-1)+fibonnaciRecursive2(n-2)
+
+
 print(fibonnaciRecursive(7))
-print(fibbonacciIt(7))
+print(fibbonacciIterative(7))
+print(fibonnaciRecursive2(3))
