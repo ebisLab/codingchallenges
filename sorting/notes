@@ -1,3 +1,6 @@
 when inputs get larger and  larger they get expensive
 O(N log N)
 
+Bubble sort, compare and swap bigger element for smaller
+
+Selection sort - compare each element until you find the smallest num
