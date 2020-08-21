@@ -26,7 +26,9 @@ goes back to nearest ancestor, see if there's any unexplored children, go back u
 
 **lower memory requirement, not necessary to store all the child pointers at each level.
 
-
+In order -> numbers are sorted in order
+Preorder -> parent node (root) all the way down 
+Postorder -> 
 
 
 
