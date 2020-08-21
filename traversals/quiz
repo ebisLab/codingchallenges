@@ -1,0 +1,6 @@
+1. If you know a solution is not far from the root of the tree ->  BFT
+2. If tree is very deep and solutions are rare --> BFT  (DFS takes a while, and if solution are rare, it will repeat the step over and over)
+3. If tree is wide --> DFS (BFS will need too much memory, it has to keep track of the node)
+4. If solution are frequent but located deep in the tree --> DFT
+5. Determining wheter a path exists between two nodes --> DFT
+6. Finding shortest path --> BFT

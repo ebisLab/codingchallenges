@@ -20,6 +20,17 @@ Continues until ALL nodes have been visited.
 (kind of like being in a maze)
 we can use recursive or iteratively... iterative approach makes use of stack
 
+(Uusallly starting from the left side)
+Follows one branch of a tree down as many levels as it can go until target is found or end is reached
+goes back to nearest ancestor, see if there's any unexplored children, go back up to ancestor so forth. 
+
+**lower memory requirement, not necessary to store all the child pointers at each level.
+
+
+
+
+
+
 
 Breadth First Traversal
 -----------------------
@@ -27,6 +38,17 @@ Explores layer by layer. Slowly moving outward from starting point.
 Each node we add every node we discover to the list of nodes to explore, then explore them in the order inw hich we encounter them. -> queue
 We jump around a bit. Next node might not be directly connected to the one we're on
 
+Left to right level by level keep going until you find the target node until the end End. 
+**Uses additional memory, because it tracks every node and its order
 
 Sequential Search -- Linear Search
             Best O(1)   Worst O(n)
+
+
+
+Pros and Cons O(n)-> they all visit each node at least once without ever repeating ourselves.
+
+BFT-> Pros: Good for shortest Path, closer nodes       Cons: More memory
+DFT-> Pros: Does the path exist                        Cons: Can get slow
+
+
