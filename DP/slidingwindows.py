@@ -59,12 +59,34 @@ def sliding_window_max2(nums, k):  # this is fixed windows
     return maxVal
 
 
-# def maxSum(nums, k):
-#     size = len(nums)
-#     intmin = 0
+def sliding_window_min(k, nums):  # this is fixed windows
+    if nums == None or len(nums) == 0:
+        return 0
+    if len(nums) <= 2:
+        if sum(nums) >= s:
+            return len(nums)
+        else:
+            return 0
 
-#     if not size > k:
-#         return -1
+    ans = INT_MAX
+    left = 0  # left => start
+    currentSum = 0
+
+    # grow the initial length
+    for i in range(len(nums)):
+        # add val to current running sum
+
+        currentSum += nums[i]
+
+        while currentSum >= s:
+            ans = min(ans, i-left+1)  # i+1-left --> current size of subarray
+            currentSum -= nums[left]
+            left += 1
+
+    if ans == None:
+        return 0
+    else:
+        return ans
 
 
 def sliding_window_smallest_subarray(targetSum, nums):  # find the best k
@@ -73,8 +95,6 @@ def sliding_window_smallest_subarray(targetSum, nums):  # find the best k
     start = 0
 
     for windend in range(len(nums)):
-        # print(windend)
-        # print("windowsum", windowsum)
         windowsum += nums[windend]
         print("windowsum2", windowsum, targetSum)
 
@@ -97,8 +117,11 @@ if __name__ == '__main__':
     arr = [4, 2, 1, 7, 8, 1, 2, 8, 1, 0]
     arr2 = [4, 2, 2, 7, 8, 1, 2, 8, 10]
     arr3 = [1, 3, -1, -3, 5, 3, 6, 7]
+    arr_ = [2, 3, 1, 2, 4, 3]
+
     k = 3
     targetSum = 8
+    s = 7
 
     print(
         f"Output of sliding_window_max function is: {sliding_window_max(arr3, k)}")
@@ -106,8 +129,11 @@ if __name__ == '__main__':
     print(
         f"Output of sliding_window_max function is: {sliding_window_max2(arr, k)}")
 
+    print(
+        f"Output of sliding_window min function is: {sliding_window_min(s, arr_)}")
+
     # print(
     # f"Output of sliding_window_max function is: {maxSum(arr, k)}")
 
     print(
-        f"Output of sliding_window_max function is: {sliding_window_smallest_subarray(targetSum, arr2)}")
+        f"Output of sliding_window smallest subarray function is: {sliding_window_smallest_subarray(targetSum, arr2)}")
