@@ -32,3 +32,5 @@ if __name__ == '__main__':
     sum = addBT(root)
 
     print("Sum of all the nodes is:", sum)
+
+    # o(n)
